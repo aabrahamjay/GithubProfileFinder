@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:popinns sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    background: url(samuel-.jpg);
+}
+.container{
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgba(255, 217, 0, 0.829);
+}
+.search-box{
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    display: flex;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search-box input{
+    flex:1;
+    outline: none;
+    border: none;
+    padding: 12px 17px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3 ease;
+}
+.search-box button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(255, 217, 0, 0.829);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.loading-spinner {
+  display: none;
+  margin: 20px auto;
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.profile-card {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 100px;
+}
+.profile-card h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.profile-card p, .profile-card span {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+.profile-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+}
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat p {
+  margin-top: 5px;
+  color: #333;
+  font-weight: bold;
+}
+.error {
+  color: #ff4d4f;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .search-box input {
+    width: 60%;
+  }
+  .profile-card {
+    padding: 10px;
+  }
+  .profile-stats {
+    flex-direction: column;
+  }
+  .stat {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-box input {
+    width: 50%;
+  }
+  .search-box button {
+    padding: 10px;
+  }
+  .profile-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
