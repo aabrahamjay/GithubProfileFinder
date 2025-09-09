@@ -27,7 +27,7 @@ Technologies Used
 
 How to Use
 
-1. Clone the repository to your local machine using git clone https://github.com/your-username/github-repo-finder.git
+1. Clone the repository to your local machine using git clone https://github.com/aabrahamjay/github-repo-finder.git
 2. Open the index.html file in a web browser
 3. Enter a GitHub username in the search bar and click the "Search" button
 4. View the profile information and click the "Visit GitHub Profile" link to visit the user's GitHub profile
@@ -46,6 +46,5 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 
 Engr Abraham Jay
 
-https://github.com/your-username
 
 I hope this helps! Let me know if you have any questions or need further assistance.
